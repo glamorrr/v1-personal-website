@@ -23,7 +23,7 @@ const ProjectCard = ({
   return (
     <Link
       href={href}
-      className={cn('relative hover:scale-105 transition-transform bg-white', className)}
+      className={cn('relative hover:scale-[1.02] transition-transform bg-white', className)}
     >
       {isHighlighted && (
         <div className="absolute top-0 flex w-full justify-center">
@@ -32,7 +32,7 @@ const ProjectCard = ({
       )}
       <div
         className={cn(
-          'space-y-4 border border-slate-300 rounded-lg p-4',
+          'space-y-4 border border-slate-300 hover:border-slate-400 transition-all rounded-lg p-4',
           isHighlighted && 'bg-gradient-to-b from-slate-50'
         )}
       >
