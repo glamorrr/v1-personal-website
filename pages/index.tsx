@@ -88,12 +88,6 @@ export default function Home() {
                 @glamorrr
               </LinkWithIcon>
             </p>
-            <p className="text-slate-500">
-              Dribbble —{' '}
-              <LinkWithIcon href="https://dribbble.com/glamorrr" isExternal>
-                @glamorrr
-              </LinkWithIcon>
-            </p>
           </div>
         </section>
       </main>
