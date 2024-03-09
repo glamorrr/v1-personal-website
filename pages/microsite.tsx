@@ -4,6 +4,7 @@ import { LinkWithIcon } from '@/components/link-with-icon';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { DemoCard } from '@/components/demo-card';
+import micrositeDatabasePic from '@/public/images/microsite-dd.png';
 
 export default function MicrositeBuilderProjectPage() {
   return (
@@ -43,6 +44,10 @@ export default function MicrositeBuilderProjectPage() {
             <p className="text-slate-500">Email: goodz@gmail.com</p>
             <p className="text-slate-500">Password: goodz123</p>
           </div>
+        </section>
+        <section className="space-y-3 ">
+          <h2 className="font-medium">Database design</h2>
+          <DemoCard isBleed img={micrositeDatabasePic} width={510} height={384} />
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Code</h2>

@@ -5,11 +5,20 @@ type Props = {
   video?: string;
   img?: StaticImageData;
   className?: string;
+  width?: number;
+  height?: number;
+  isBleed?: boolean;
 };
 
-const DemoCard = ({ video, className, img }: Props) => {
+const DemoCard = ({ video, className, img, width, height, isBleed = false }: Props) => {
   return (
-    <div className={cn('relative bg-white', className)}>
+    <div
+      className={cn(
+        'relative bg-white',
+        isBleed && 'lg:transform lg:-translate-x-[50%] lg:left-[50%] lg:w-[125%]',
+        className
+      )}
+    >
       <div className="absolute top-0 flex w-full justify-center">
         <div className="left-0 h-[1px] animate-border-width rounded-full bg-gradient-to-r from-slate-200 via-slate-600 to-slate-200 " />
       </div>
@@ -20,8 +29,8 @@ const DemoCard = ({ video, className, img }: Props) => {
             className="rounded-md border border-slate-300"
             src={img}
             alt="project movie browser"
-            width={544 * 1.4}
-            height={326 * 1.4}
+            width={Math.floor((width ?? 544) * (isBleed ? 2.1 : 1.5))}
+            height={Math.floor((height ?? 326) * (isBleed ? 2.1 : 1.5))}
           />
         )}
         {!img && (
@@ -39,9 +48,5 @@ const DemoCard = ({ video, className, img }: Props) => {
     </div>
   );
 };
-
-<video className="w-full max-w-screen-sm mt-2 rounded" width="1440" height="810">
-  <source src="/videos/movie-demo.mp4" type="video/mp4" />
-</video>;
 
 export { DemoCard };
