@@ -21,29 +21,28 @@ const ProjectCard = ({
   className,
 }: Props) => {
   return (
-    <Link
-      href={href}
-      className={cn('relative hover:scale-[1.02] transition-transform bg-white', className)}
-    >
+    <Link href={href} className={cn('relative group', className)}>
       {isHighlighted && (
-        <div className="absolute top-0 flex w-full justify-center">
-          <div className="left-0 h-[1px] animate-border-width rounded-full bg-gradient-to-r from-fuchsia-200 via-fuchsia-600 to-fuchsia-200" />
+        <div className="absolute -top-[1px]  flex w-full justify-center">
+          <div className="left-0 h-[1px]  animate-border-width bg-gradient-to-r from-pink-200 via-pink-500 to-pink-200" />
         </div>
       )}
       <div
         className={cn(
-          'space-y-4 border border-slate-300 hover:border-slate-400 transition-all rounded-lg p-4',
+          'space-y-4 ring-1 ring-slate-950/10 hover:ring-slate-700/20 shadow shadow-slate-300 transition-all rounded-lg p-4 bg-white',
           isHighlighted && 'bg-gradient-to-b from-slate-50'
         )}
       >
-        <Image
-          priority={isHighlighted}
-          className="rounded-md border border-slate-300"
-          src={img}
-          alt="project movie browser"
-          width={544 * 1.4}
-          height={326 * 1.4}
-        />
+        <div className="aspect-auto overflow-hidden rounded-md border border-gray-300">
+          <Image
+            priority={isHighlighted}
+            className="group-hover:scale-110 transition-transform"
+            src={img}
+            alt="project movie browser"
+            width={544 * 1.4}
+            height={326 * 1.4}
+          />
+        </div>
         <div className="flex justify-between items-center">
           <h3 className={cn('font-medium', !isLarge && 'text-sm')}>{title}</h3>
           <Icon icon="radix-icons:arrow-right" className={cn(isLarge && 'text-2xl')} />
