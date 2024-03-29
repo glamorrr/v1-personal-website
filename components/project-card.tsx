@@ -29,11 +29,11 @@ const ProjectCard = ({
       )}
       <div
         className={cn(
-          'space-y-4 ring-1 ring-slate-950/10 hover:ring-slate-700/20 shadow shadow-slate-300 transition-all rounded-lg p-4 bg-white',
+          'space-y-4 ring-1 ring-slate-950/10 hover:ring-slate-700/20 shadow shadow-slate-200 transition-all rounded-lg p-4 bg-white',
           isHighlighted && 'bg-gradient-to-b from-slate-50'
         )}
       >
-        <div className="aspect-auto overflow-hidden rounded-md border border-gray-300">
+        <div className="aspect-auto overflow-hidden rounded-md border border-gray-200">
           <Image
             priority={isHighlighted}
             className="group-hover:scale-110 transition-transform"
