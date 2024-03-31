@@ -12,7 +12,7 @@ export default function MovieBrowserProjectPage() {
         <header>
           <Link
             href="/"
-            className="inline-flex space-x-2 items-center hover:underline text-slate-500 text-sm"
+            className="inline-flex space-x-2 items-center hover:underline text-gray-500 text-sm"
           >
             <Icon icon="radix-icons:arrow-left" className="mr-1" />
             Back to home
@@ -20,10 +20,10 @@ export default function MovieBrowserProjectPage() {
         </header>
         <section className="space-y-3">
           <h2 className="font-medium">Movie browser</h2>
-          <p className="text-slate-500">
+          <p className="text-gray-500">
             A web application for viewing and searching information related to movies. Movies data
-            is taken from TMDb API. Data about movies is sourced from the TMDb API. The application
-            is developed using Next.js, with Tailwind CSS for styling.
+            is sourced from the <mark>TMDb API</mark>. The application is developed using{' '}
+            <mark>Next.js</mark>, with <mark>Tailwind CSS</mark> for styling.
           </p>
         </section>
         <section className="space-y-3">
@@ -40,7 +40,7 @@ export default function MovieBrowserProjectPage() {
         <section className="space-y-3">
           <h2 className="font-medium">Code</h2>
           <div className="space-y-2">
-            <p className="text-slate-500">
+            <p className="text-gray-500">
               <LinkWithIcon href="https://github.com/glamorrr/movielist-movie-app" isExternal>
                 GitHub
               </LinkWithIcon>

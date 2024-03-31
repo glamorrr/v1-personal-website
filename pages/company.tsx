@@ -12,7 +12,7 @@ export default function CompanyProfileProjectPage() {
         <header>
           <Link
             href="/"
-            className="inline-flex space-x-2 items-center hover:underline text-slate-500 text-sm"
+            className="inline-flex space-x-2 items-center hover:underline text-gray-500 text-sm"
           >
             <Icon icon="radix-icons:arrow-left" className="mr-1" />
             Back to home
@@ -20,9 +20,9 @@ export default function CompanyProfileProjectPage() {
         </header>
         <section className="space-y-3">
           <h2 className="font-medium">Company profile</h2>
-          <p className="text-slate-500">
-            A static site providing information about a company. Created using Next.js and Tailwind
-            CSS.
+          <p className="text-gray-500">
+            A static site providing information about a company. Created using <mark>Next.js</mark>{' '}
+            and <mark>Tailwind CSS</mark>.
           </p>
         </section>
         <section className="space-y-3">

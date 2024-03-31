@@ -20,9 +20,9 @@ const DemoCard = ({ video, className, img, width, height, isBleed = false }: Pro
       )}
     >
       <div className="absolute -top-[1px] flex w-full justify-center">
-        <div className="left-0 h-[1px] animate-border-width rounded-full bg-gradient-to-r from-pink-200 via-pink-500 to-pink-200 " />
+        <div className="left-0 h-[1px] animate-border-width rounded-full bg-gradient-to-r from-primary-200 via-primary-500 to-primary-200 " />
       </div>
-      <div className="space-y-4 ring-1 ring-slate-950/10 shadow shadow-slate-200 rounded-lg bg-gradient-to-b from-slate-50 sm:p-4 p-1">
+      <div className="space-y-4 ring-1 ring-gray-950/10 shadow shadow-gray-200 rounded-lg bg-gradient-to-b from-gray-50 sm:p-4 p-1">
         {img && (
           <Image
             priority={true}

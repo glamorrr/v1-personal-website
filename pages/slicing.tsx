@@ -13,7 +13,7 @@ export default function SlicingProjectPage() {
         <header>
           <Link
             href="/"
-            className="inline-flex space-x-2 items-center hover:underline text-slate-500 text-sm"
+            className="inline-flex space-x-2 items-center hover:underline text-gray-500 text-sm"
           >
             <Icon icon="radix-icons:arrow-left" className="mr-1" />
             Back to home
@@ -21,7 +21,9 @@ export default function SlicingProjectPage() {
         </header>
         <section className="space-y-3">
           <h2 className="font-medium">Slicing</h2>
-          <p className="text-slate-500">Convert website designs into HTML and CSS.</p>
+          <p className="text-gray-500">
+            Convert website designs into <mark>HTML</mark> and <mark>CSS</mark>.
+          </p>
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Demo</h2>
@@ -33,7 +35,7 @@ export default function SlicingProjectPage() {
         <section className="space-y-3">
           <h2 className="font-medium">Code</h2>
           <div className="space-y-2">
-            <p className="text-slate-500">
+            <p className="text-gray-500">
               <LinkWithIcon href="https://github.com/glamorrr/cool-sites" isExternal>
                 GitHub
               </LinkWithIcon>

@@ -27,7 +27,7 @@ export default function Home() {
             />
             <div>
               <h1 className="font-medium">Toni Anugrah</h1>
-              <p className="text-slate-500">Final-Year Student</p>
+              <p className="text-gray-500">Final-Year Student</p>
             </div>
           </section>
           <Link href="mailto:toniianugrah@gmail.com" className={buttonVariants()}>
@@ -36,7 +36,9 @@ export default function Home() {
         </header>
         <section className="space-y-3">
           <h2 className="font-medium">About me</h2>
-          <p className="text-slate-500">Likes to explore things about software.</p>
+          <p className="text-gray-500">
+            Likes to explore things about <mark className="mark">software</mark>.
+          </p>
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Projects</h2>
@@ -59,13 +61,13 @@ export default function Home() {
         <section className="space-y-3">
           <h2 className="font-medium">Certifications</h2>
           <div className="space-y-2">
-            <p className="text-slate-500">
+            <p className="text-gray-500">
               Becoming Frontend Developer —{' '}
               <LinkWithIcon href="https://www.dicoding.com/certificates/72ZDEMN6LPYW" isExternal>
                 Dicoding Indonesia
               </LinkWithIcon>
             </p>
-            <p className="text-slate-500">
+            <p className="text-gray-500">
               Becoming Backend Developer —{' '}
               <LinkWithIcon href="https://www.dicoding.com/certificates/QLZ9297GMX5D" isExternal>
                 Dicoding Indonesia
@@ -76,13 +78,13 @@ export default function Home() {
         <section className="space-y-3">
           <h2 className="font-medium">Social links</h2>
           <div className="space-y-2">
-            <p className="text-slate-500">
+            <p className="text-gray-500">
               Email —{' '}
               <LinkWithIcon href="mailto:toniianugrah@gmail.com">
                 toniianugrah@gmail.com
               </LinkWithIcon>
             </p>
-            <p className="text-slate-500">
+            <p className="text-gray-500">
               GitHub —{' '}
               <LinkWithIcon href="https://github.com/glamorrr" isExternal>
                 @glamorrr

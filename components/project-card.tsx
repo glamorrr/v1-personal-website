@@ -24,13 +24,13 @@ const ProjectCard = ({
     <Link href={href} className={cn('relative group', className)}>
       {isHighlighted && (
         <div className="absolute -top-[1px]  flex w-full justify-center">
-          <div className="left-0 h-[1px]  animate-border-width bg-gradient-to-r from-pink-200 via-pink-500 to-pink-200" />
+          <div className="left-0 h-[1px]  animate-border-width bg-gradient-to-r from-primary-200 via-primary-500 to-primary-200" />
         </div>
       )}
       <div
         className={cn(
-          'space-y-4 ring-1 ring-slate-950/10 hover:ring-slate-700/20 shadow shadow-slate-200 transition-all rounded-lg p-4 bg-white',
-          isHighlighted && 'bg-gradient-to-b from-slate-50'
+          'space-y-4 ring-1 ring-gray-950/10 hover:ring-gray-700/20 shadow shadow-gray-200 transition-all rounded-lg p-4 bg-white',
+          isHighlighted && 'bg-gradient-to-b from-gray-50'
         )}
       >
         <div className="aspect-auto overflow-hidden rounded-md border border-gray-200">

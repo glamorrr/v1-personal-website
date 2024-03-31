@@ -13,7 +13,7 @@ export default function MicrositeBuilderProjectPage() {
         <header>
           <Link
             href="/"
-            className="inline-flex space-x-2 items-center hover:underline text-slate-500 text-sm"
+            className="inline-flex space-x-2 items-center hover:underline text-gray-500 text-sm"
           >
             <Icon icon="radix-icons:arrow-left" className="mr-1" />
             Back to home
@@ -21,10 +21,11 @@ export default function MicrositeBuilderProjectPage() {
         </header>
         <section className="space-y-3">
           <h2 className="font-medium">Microsite builder</h2>
-          <p className="text-slate-500">
+          <p className="text-gray-500">
             A web application for creating a simple site and allows users to share multiple links.
-            This website uses Express.js and PostgreSQL on the server. API endpoints is tested using
-            Jest. To handle client interactivity, this website utilizes React.js and Chakra UI.
+            This website uses <mark>Express.js</mark> and <mark>PostgreSQL</mark> on the server. API
+            endpoints is tested using <mark>Jest</mark>. To handle client interactivity, this
+            website utilizes <mark>React.js</mark> and <mark>Chakra UI</mark>.
           </p>
         </section>
         <section className="space-y-3">
@@ -41,8 +42,8 @@ export default function MicrositeBuilderProjectPage() {
         <section className="space-y-3">
           <h2 className="font-medium">Login credentials</h2>
           <div className="space-y-2">
-            <p className="text-slate-500">Email: goodz@gmail.com</p>
-            <p className="text-slate-500">Password: goodz123</p>
+            <p className="text-gray-500">Email: goodz@gmail.com</p>
+            <p className="text-gray-500">Password: goodz123</p>
           </div>
         </section>
         <section className="space-y-3 ">
@@ -52,13 +53,13 @@ export default function MicrositeBuilderProjectPage() {
         <section className="space-y-3">
           <h2 className="font-medium">Code</h2>
           <div className="space-y-2">
-            <p className="text-slate-500">
+            <p className="text-gray-500">
               Client —{' '}
               <LinkWithIcon href="https://github.com/glamorrr/goodz-frontend" isExternal>
                 GitHub
               </LinkWithIcon>
             </p>
-            <p className="text-slate-500">
+            <p className="text-gray-500">
               Server —{' '}
               <LinkWithIcon href="https://github.com/glamorrr/goodz-backend" isExternal>
                 GitHub
