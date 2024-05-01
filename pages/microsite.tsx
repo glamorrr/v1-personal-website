@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { DemoCard } from '@/components/demo-card';
 import micrositeDatabasePic from '@/public/images/microsite-dd.png';
+import micrositeDeploymentPic from '@/public/images/microsite-deployment.jpg';
 
 export default function MicrositeBuilderProjectPage() {
   return (
@@ -47,8 +48,12 @@ export default function MicrositeBuilderProjectPage() {
           </div>
         </section>
         <section className="space-y-3 ">
+          <h2 className="font-medium">Deployment</h2>
+          <DemoCard isBleed img={micrositeDeploymentPic} width={648} height={480} />
+        </section>
+        <section className="space-y-3 ">
           <h2 className="font-medium">Database design</h2>
-          <DemoCard isBleed img={micrositeDatabasePic} width={510} height={384} />
+          <DemoCard isBleed img={micrositeDatabasePic} width={648} height={488} />
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Code</h2>

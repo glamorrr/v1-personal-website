@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-primary-100 ring-1 ring-primary-950/10 shadow-primary-600 text-primary-600 hover:text-primary-500 active:text-primary-700/75 shadow-sm hover:bg-primary-50 active:bg-primary-200',
+          'bg-primary-500 shadow shadow-primary-200 text-primary-50 active:text-primary-100 hover:bg-primary-500/90 active:bg-primary-600',
       },
       size: {
         default: 'h-9 px-4 py-2',
