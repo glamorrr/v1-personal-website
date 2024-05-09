@@ -4,7 +4,7 @@
 
 @layer base {
   mark {
-    @apply bg-primary-100 text-primary-700 rounded-sm ring-1 ring-primary-950/10 shadow-sm shadow-primary-200;
+    @apply bg-primary-50 text-primary-700 rounded-sm ring-1 ring-primary-200;
   }
 }
 
