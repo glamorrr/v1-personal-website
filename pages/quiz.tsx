@@ -4,6 +4,7 @@ import { LinkWithIcon } from '@/components/link-with-icon';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { DemoCard } from '@/components/demo-card';
+import { cn } from '@/lib/utils';
 
 export default function QuizProjectPage() {
   return (
@@ -34,7 +35,7 @@ export default function QuizProjectPage() {
           <Link
             target="_blank"
             href="https://local-quiz-app.netlify.app/"
-            className={buttonVariants()}
+            className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website
           </Link>

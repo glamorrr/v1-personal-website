@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import companyPic from '@/public/images/company-screenshot.png';
 import { DemoCard } from '@/components/demo-card';
+import { cn } from '@/lib/utils';
 
 export default function CompanyProfileProjectPage() {
   return (
@@ -31,7 +32,7 @@ export default function CompanyProfileProjectPage() {
           <Link
             target="_blank"
             href="https://cipta-mikro-material.com/"
-            className={buttonVariants()}
+            className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website
           </Link>

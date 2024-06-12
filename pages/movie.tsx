@@ -4,6 +4,7 @@ import { LinkWithIcon } from '@/components/link-with-icon';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { DemoCard } from '@/components/demo-card';
+import { cn } from '@/lib/utils';
 
 export default function MovieBrowserProjectPage() {
   return (
@@ -32,7 +33,7 @@ export default function MovieBrowserProjectPage() {
           <Link
             target="_blank"
             href="https://movielist.vercel.app/browse"
-            className={buttonVariants()}
+            className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website
           </Link>

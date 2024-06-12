@@ -6,6 +6,7 @@ import { Icon } from '@iconify/react';
 import { DemoCard } from '@/components/demo-card';
 import micrositeDatabasePic from '@/public/images/microsite-dd.png';
 import micrositeDeploymentPic from '@/public/images/microsite-deployment.jpg';
+import { cn } from '@/lib/utils';
 
 export default function MicrositeBuilderProjectPage() {
   return (
@@ -35,7 +36,7 @@ export default function MicrositeBuilderProjectPage() {
           <Link
             target="_blank"
             href="https://goodzid-staging.netlify.app/"
-            className={buttonVariants()}
+            className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website
           </Link>

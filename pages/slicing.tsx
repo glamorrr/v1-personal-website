@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react';
 import slicingPic from '@/public/images/slicing-screenshot.png';
 import { DemoCard } from '@/components/demo-card';
 import { LinkWithIcon } from '@/components/link-with-icon';
+import { cn } from '@/lib/utils';
 
 export default function SlicingProjectPage() {
   return (
@@ -28,7 +29,11 @@ export default function SlicingProjectPage() {
         <section className="space-y-3">
           <h2 className="font-medium">Demo</h2>
           <DemoCard img={slicingPic} />
-          <Link target="_blank" href="https://glamorrr.vercel.app/" className={buttonVariants()}>
+          <Link
+            target="_blank"
+            href="https://glamorrr.vercel.app/"
+            className={cn(buttonVariants(), 'gtm-live-demo-link')}
+          >
             See website
           </Link>
         </section>
