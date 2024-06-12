@@ -42,7 +42,11 @@ export default function CafeBrowserProjectPage() {
           <h2 className="font-medium">Code</h2>
           <div className="space-y-2">
             <p className="text-gray-500">
-              <LinkWithIcon href="https://github.com/glamorrr/project-gis" isExternal>
+              <LinkWithIcon
+                href="https://github.com/glamorrr/project-gis"
+                isExternal
+                className="gtm-project-code-link"
+              >
                 GitHub
               </LinkWithIcon>
             </p>

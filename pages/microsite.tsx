@@ -61,13 +61,21 @@ export default function MicrositeBuilderProjectPage() {
           <div className="space-y-2">
             <p className="text-gray-500">
               Client —{' '}
-              <LinkWithIcon href="https://github.com/glamorrr/goodz-frontend" isExternal>
+              <LinkWithIcon
+                href="https://github.com/glamorrr/goodz-frontend"
+                isExternal
+                className="gtm-project-code-link"
+              >
                 GitHub
               </LinkWithIcon>
             </p>
             <p className="text-gray-500">
               Server —{' '}
-              <LinkWithIcon href="https://github.com/glamorrr/goodz-backend" isExternal>
+              <LinkWithIcon
+                href="https://github.com/glamorrr/goodz-backend"
+                isExternal
+                className="gtm-project-code-link"
+              >
                 GitHub
               </LinkWithIcon>
             </p>

@@ -42,7 +42,11 @@ export default function MovieBrowserProjectPage() {
           <h2 className="font-medium">Code</h2>
           <div className="space-y-2">
             <p className="text-gray-500">
-              <LinkWithIcon href="https://github.com/glamorrr/movielist-movie-app" isExternal>
+              <LinkWithIcon
+                href="https://github.com/glamorrr/movielist-movie-app"
+                isExternal
+                className="gtm-project-code-link"
+              >
                 GitHub
               </LinkWithIcon>
             </p>
