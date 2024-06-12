@@ -21,7 +21,7 @@ const ProjectCard = ({
   className,
 }: Props) => {
   return (
-    <Link href={href} className={cn('relative group', className)}>
+    <Link href={href} className={cn('relative group', className, 'gtm-project-card')}>
       {isHighlighted && (
         <div className="absolute -top-[1px]  flex w-full justify-center">
           <div className="left-0 h-[1px] animate-border-width bg-gradient-to-r from-primary-200 via-primary-500 to-primary-200" />

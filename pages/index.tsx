@@ -11,6 +11,7 @@ import slicingPic from '@/public/images/slicing-screenshot.png';
 import { ProjectCard } from '@/components/project-card';
 import { LinkWithIcon } from '@/components/link-with-icon';
 import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 export default function Home() {
   return (
@@ -30,7 +31,10 @@ export default function Home() {
               <p className="text-gray-500">Final-Year Student</p>
             </div>
           </section>
-          <Link href="mailto:toniianugrah@gmail.com" className={buttonVariants()}>
+          <Link
+            href="mailto:toniianugrah@gmail.com"
+            className={cn('gtm-contact', buttonVariants())}
+          >
             Contact
           </Link>
         </header>
@@ -63,13 +67,23 @@ export default function Home() {
           <div className="space-y-2">
             <p className="text-gray-500">
               Becoming Frontend Developer —{' '}
-              <LinkWithIcon href="https://www.dicoding.com/certificates/72ZDEMN6LPYW" isExternal>
+              <LinkWithIcon
+                href="https://www.dicoding.com/certificates/72ZDEMN6LPYW"
+                isExternal
+                id="gtm-fe-certification"
+                className="gtm-certification"
+              >
                 Dicoding Indonesia
               </LinkWithIcon>
             </p>
             <p className="text-gray-500">
               Becoming Backend Developer —{' '}
-              <LinkWithIcon href="https://www.dicoding.com/certificates/QLZ9297GMX5D" isExternal>
+              <LinkWithIcon
+                href="https://www.dicoding.com/certificates/QLZ9297GMX5D"
+                isExternal
+                id="gtm-be-certification"
+                className="gtm-certification"
+              >
                 Dicoding Indonesia
               </LinkWithIcon>
             </p>
@@ -80,13 +94,22 @@ export default function Home() {
           <div className="space-y-2">
             <p className="text-gray-500">
               Email —{' '}
-              <LinkWithIcon href="mailto:toniianugrah@gmail.com">
+              <LinkWithIcon
+                href="mailto:toniianugrah@gmail.com"
+                className="gtm-social-link"
+                id="gtm-social-link-mail"
+              >
                 toniianugrah@gmail.com
               </LinkWithIcon>
             </p>
             <p className="text-gray-500">
               GitHub —{' '}
-              <LinkWithIcon href="https://github.com/glamorrr" isExternal>
+              <LinkWithIcon
+                href="https://github.com/glamorrr"
+                isExternal
+                className="gtm-social-link"
+                id="gtm-social-link-github"
+              >
                 @glamorrr
               </LinkWithIcon>
             </p>

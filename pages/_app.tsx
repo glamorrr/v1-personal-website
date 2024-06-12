@@ -57,9 +57,8 @@ export default function App({ Component, pageProps }: MyAppProps) {
 
       <div className={cn('text-slate900', inter.className)}>
         {getLayout(<Component {...pageProps} />)}
+        <GoogleTagManager gtmId="GTM-TFLH9BMT" />
       </div>
-
-      <GoogleTagManager gtmId="GTM-TFLH9BMT" />
     </>
   );
 }
