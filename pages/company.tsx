@@ -7,7 +7,7 @@ import { DemoCard } from '@/components/demo-card';
 
 export default function CompanyProfileProjectPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout meta={{ title: 'Company profile' }}>
       <main className="space-y-16">
         <header>
           <Link

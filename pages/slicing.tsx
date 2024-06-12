@@ -8,7 +8,7 @@ import { LinkWithIcon } from '@/components/link-with-icon';
 
 export default function SlicingProjectPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout meta={{ title: 'Slicing' }}>
       <main className="space-y-16">
         <header>
           <Link

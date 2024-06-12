@@ -7,7 +7,7 @@ import { DemoCard } from '@/components/demo-card';
 
 export default function QuizProjectPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout meta={{ title: 'Fun quiz' }}>
       <main className="space-y-16">
         <header>
           <Link

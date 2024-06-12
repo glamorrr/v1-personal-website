@@ -7,7 +7,7 @@ import { DemoCard } from '@/components/demo-card';
 
 export default function MovieBrowserProjectPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout meta={{ title: 'Movie browser' }}>
       <main className="space-y-16">
         <header>
           <Link

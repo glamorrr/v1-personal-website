@@ -14,7 +14,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <DefaultLayout>
+    <DefaultLayout meta={{ title: 'Toni Anugrah' }}>
       <main className="space-y-16">
         <header className="flex sm:space-x-6 sm:items-center justify-between sm:flex-row flex-col sm:space-y-0 space-y-6 items-stretch">
           <section className="flex space-x-4 items-center">

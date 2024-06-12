@@ -7,7 +7,7 @@ import { DemoCard } from '@/components/demo-card';
 
 export default function CafeBrowserProjectPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout meta={{ title: 'Cafe browser' }}>
       <main className="space-y-16">
         <header>
           <Link

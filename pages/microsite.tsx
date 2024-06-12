@@ -9,7 +9,7 @@ import micrositeDeploymentPic from '@/public/images/microsite-deployment.jpg';
 
 export default function MicrositeBuilderProjectPage() {
   return (
-    <DefaultLayout>
+    <DefaultLayout meta={{ title: 'Microsite builder' }}>
       <main className="space-y-16">
         <header>
           <Link
