@@ -4,6 +4,7 @@ import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 type NextPageWithLayout = NextPage & {
   // eslint-disable-next-line unused-imports/no-unused-vars
@@ -57,6 +58,8 @@ export default function App({ Component, pageProps }: MyAppProps) {
       <div className={cn('text-slate900', inter.className)}>
         {getLayout(<Component {...pageProps} />)}
       </div>
+
+      <GoogleTagManager gtmId="GTM-TFLH9BMT" />
     </>
   );
 }
