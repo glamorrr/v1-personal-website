@@ -20,7 +20,7 @@ export default function Home() {
         <header className="flex sm:space-x-6 sm:items-center justify-between sm:flex-row flex-col sm:space-y-0 space-y-6 items-stretch">
           <section className="flex space-x-4 items-center">
             <Image
-              className="w-16 h-16 rounded-full border"
+              className="w-16 h-16 rounded-full"
               src={profilePic}
               alt="profile picture"
               width={100}
