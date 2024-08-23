@@ -45,6 +45,10 @@ export default function Home() {
           </p>
         </section>
         <section className="space-y-3">
+          <h2 className="font-medium">Tech Stack</h2>
+          <p className="text-gray-500">React.js, Express.js</p>
+        </section>
+        <section className="space-y-3">
           <h2 className="font-medium">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <ProjectCard
