@@ -120,6 +120,7 @@ export default function Home() {
               LinkedIn —{' '}
               <LinkWithIcon
                 href="https://www.linkedin.com/in/tonianugrah"
+                isExternal
                 className="gtm-social-link"
                 id="gtm-social-link-linkedin"
               >
