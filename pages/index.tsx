@@ -5,6 +5,7 @@ import profilePic from '@/public/images/pp.jpeg';
 import moviePic from '@/public/images/movie-screenshot.png';
 import micrositePic from '@/public/images/microsite-screenshot.png';
 import cafePic from '@/public/images/cafe-screenshot.png';
+import hrPic from '@/public/images/hr-screenshot.png';
 import companyPic from '@/public/images/company-screenshot.png';
 import quizPic from '@/public/images/quiz-screenshot.png';
 import slicingPic from '@/public/images/slicing-screenshot.png';
@@ -28,7 +29,7 @@ export default function Home() {
             />
             <div>
               <h1 className="font-medium">Toni Anugrah</h1>
-              <p className="text-gray-500">Final-Year Student</p>
+              <p className="text-gray-500">Web Developer</p>
             </div>
           </section>
           <Link
@@ -40,33 +41,46 @@ export default function Home() {
         </header>
         <section className="space-y-3">
           <h2 className="font-medium">About me</h2>
-          <p className="text-gray-500">
-            Likes to explore things about <mark className="mark">software</mark>.
+          <p className="text-gray-500">I build web apps with a user-friendly experience.</p>
+        </section>
+        <section className="space-y-3">
+          <h2 className="font-medium">Tools</h2>
+          <p className="flex gap-3 flex-wrap">
+            <mark>React.js</mark>
+            <mark>Tailwind CSS</mark>
+            <mark>Figma</mark>
+            <mark>Express.js</mark>
+            <mark>SQL</mark>
+            <mark>Wordpress</mark>
+            <mark>Wix</mark>
+            <mark>Looker Studio</mark>
+            <mark>Postman</mark>
           </p>
         </section>
         <section className="space-y-3">
-          <h2 className="font-medium">Projects</h2>
+          <h2 className="font-medium">Explorations</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <ProjectCard
-              isHighlighted
-              isLarge
               title="Movie browser"
               href="/movie"
               img={moviePic}
+              isHighlighted
+              isLarge
               className="col-span-1 sm:col-span-2"
             />
-            <ProjectCard title="Microsite builder" href="/microsite" img={micrositePic} />
-            <ProjectCard title="Cafe browser" href="/cafe" img={cafePic} />
             <ProjectCard title="Company profile" href="/company" img={companyPic} />
-            <ProjectCard title="Fun quiz" href="/quiz" img={quizPic} />
+            <ProjectCard title="Cafe browser" href="/cafe" img={cafePic} />
+            <ProjectCard title="HR hiring dashboard" href="/hr" img={hrPic} />
+            <ProjectCard title="Microsite builder" href="/microsite" img={micrositePic} />
             <ProjectCard title="Slicing" href="/slicing" img={slicingPic} />
+            <ProjectCard title="Fun quiz" href="/quiz" img={quizPic} />
           </div>
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Certifications</h2>
           <div className="space-y-2">
             <p className="text-gray-500">
-              Becoming Frontend Developer —{' '}
+              Menjadi Frontend Developer Expert —{' '}
               <LinkWithIcon
                 href="https://www.dicoding.com/certificates/72ZDEMN6LPYW"
                 isExternal
@@ -77,7 +91,7 @@ export default function Home() {
               </LinkWithIcon>
             </p>
             <p className="text-gray-500">
-              Becoming Backend Developer —{' '}
+              Menjadi Backend Developer Expert —{' '}
               <LinkWithIcon
                 href="https://www.dicoding.com/certificates/QLZ9297GMX5D"
                 isExternal
@@ -100,6 +114,16 @@ export default function Home() {
                 id="gtm-social-link-mail"
               >
                 toniianugrah@gmail.com
+              </LinkWithIcon>
+            </p>
+            <p className="text-gray-500">
+              LinkedIn —{' '}
+              <LinkWithIcon
+                href="https://www.linkedin.com/in/tonianugrah"
+                className="gtm-social-link"
+                id="gtm-social-link-linkedin"
+              >
+                @tonianugrah
               </LinkWithIcon>
             </p>
             <p className="text-gray-500">

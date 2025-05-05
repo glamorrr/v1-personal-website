@@ -32,7 +32,7 @@ export default function CafeBrowserProjectPage() {
           <DemoCard video="/videos/cafe-demo.mp4" />
           <Link
             target="_blank"
-            href="https://kopisetiabudi.vercel.app/"
+            href="https://kopisetiabudi.netlify.app/"
             className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website

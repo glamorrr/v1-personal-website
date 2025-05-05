@@ -32,7 +32,7 @@ export default function MovieBrowserProjectPage() {
           <DemoCard video="/videos/movie-demo.mp4" />
           <Link
             target="_blank"
-            href="https://movielist.vercel.app/browse"
+            href="https://findmyfavoritemovies.netlify.app"
             className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website
