@@ -34,7 +34,7 @@ export default function QuizProjectPage() {
           <DemoCard video="/videos/quiz-demo.mp4" />
           <Link
             target="_blank"
-            href="https://local-quiz-app.netlify.app/"
+            href="https://local-quiz-app.vercel.app/"
             className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website
