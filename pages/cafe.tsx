@@ -32,7 +32,7 @@ export default function CafeBrowserProjectPage() {
           <DemoCard video="/videos/cafe-demo.mp4" />
           <Link
             target="_blank"
-            href="https://cafebrowser.vercel.app/"
+            href="https://cafe.tonianugrah.my.id"
             className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website

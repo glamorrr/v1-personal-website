@@ -32,7 +32,7 @@ export default function MovieBrowserProjectPage() {
           <DemoCard video="/videos/movie-demo.mp4" />
           <Link
             target="_blank"
-            href="https://movielist-869231.vercel.app/"
+            href="https://movie.tonianugrah.my.id/"
             className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website

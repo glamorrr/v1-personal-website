@@ -31,7 +31,7 @@ export default function SlicingProjectPage() {
           <DemoCard img={slicingPic} />
           <Link
             target="_blank"
-            href="https://cool-sites-three.vercel.app/"
+            href="https://sites.tonianugrah.my.id/"
             className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website
