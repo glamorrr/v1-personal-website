@@ -27,9 +27,9 @@ export default function DocumentTrackingProjectPage() {
           <h2 className="font-medium">Document tracking</h2>
           <p className="text-gray-500">
             A web application for distributing and tracking documents. Admins can send documents to
-            designated PICs via WhatsApp, who then confirm receipt through a web form. Developed
-            using <mark>React.js</mark> for the frontend, <mark>Tailwind CSS</mark> for styling,{' '}
-            <mark>Express.js</mark> for the backend, <mark>Prisma</mark> as the ORM, and integrates
+            designated PICs, who then confirm receipt through a web form. Developed using{' '}
+            <mark>React.js</mark> for the frontend, <mark>Tailwind CSS</mark> for styling,{' '}
+            <mark>Express.js</mark> for the backend, <mark>Prisma</mark> as the ORM, and integrated
             with WhatsApp using the <mark>Whapify.id API</mark>.
           </p>
         </section>
