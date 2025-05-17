@@ -29,7 +29,7 @@ export default function CafeBrowserProjectPage() {
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Demo</h2>
-          <DemoCard video="/videos/cafe-demo.mp4" />
+          <DemoCard isHighlighted video="/videos/cafe-demo.mp4" />
           <Link
             target="_blank"
             href="https://cafe.tonianugrah.my.id"

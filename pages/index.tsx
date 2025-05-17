@@ -4,6 +4,7 @@ import Image from 'next/image';
 import profilePic from '@/public/images/pp.jpeg';
 import moviePic from '@/public/images/movie-screenshot.png';
 import micrositePic from '@/public/images/microsite-screenshot.png';
+import documentPic from '@/public/images/document-screenshot.png';
 import cafePic from '@/public/images/cafe-screenshot.png';
 import hrPic from '@/public/images/hr-screenshot.png';
 import companyPic from '@/public/images/company-screenshot.png';
@@ -50,6 +51,7 @@ export default function Home() {
             <mark>Tailwind CSS</mark>
             <mark>Figma</mark>
             <mark>Express.js</mark>
+            <mark>Prisma</mark>
             <mark>SQL</mark>
             <mark>Wordpress</mark>
             <mark>Wix</mark>
@@ -68,10 +70,11 @@ export default function Home() {
               isLarge
               className="col-span-1 sm:col-span-2"
             />
+            <ProjectCard title="Microsite builder" href="/microsite" img={micrositePic} />
+            <ProjectCard title="Document tracking" href="/document" img={documentPic} />
             <ProjectCard title="Company profile" href="/company" img={companyPic} />
             <ProjectCard title="Cafe browser" href="/cafe" img={cafePic} />
             <ProjectCard title="HR hiring dashboard" href="/hr" img={hrPic} />
-            <ProjectCard title="Microsite builder" href="/microsite" img={micrositePic} />
             <ProjectCard title="Slicing" href="/slicing" img={slicingPic} />
             <ProjectCard title="Fun quiz" href="/quiz" img={quizPic} />
           </div>

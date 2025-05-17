@@ -1,4 +1,3 @@
-import { buttonVariants } from '@/components/ui/button';
 import { DefaultLayout } from '@/layouts';
 import { LinkWithIcon } from '@/components/link-with-icon';
 import Link from 'next/link';
@@ -6,7 +5,6 @@ import { Icon } from '@iconify/react';
 import { DemoCard } from '@/components/demo-card';
 import micrositeDatabasePic from '@/public/images/microsite-dd.png';
 import micrositeDeploymentPic from '@/public/images/microsite-deployment.jpg';
-import { cn } from '@/lib/utils';
 
 export default function MicrositeBuilderProjectPage() {
   return (
@@ -32,25 +30,25 @@ export default function MicrositeBuilderProjectPage() {
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Demo</h2>
-          <DemoCard video="/videos/microsite-demo.mp4" />
-          <Link
+          <DemoCard isHighlighted video="/videos/microsite-demo.mp4" />
+          {/* <Link
             target="_blank"
             href="https://goodzid-staging.netlify.app/"
             className={cn(buttonVariants(), 'gtm-live-demo-link')}
           >
             See website
-          </Link>
+          </Link> */}
         </section>
-        <section className="space-y-3">
+        {/* <section className="space-y-3">
           <h2 className="font-medium">Login credentials</h2>
           <div className="space-y-2">
             <p className="text-gray-500">Email: goodz@gmail.com</p>
             <p className="text-gray-500">Password: goodz123</p>
           </div>
-        </section>
+        </section> */}
         <section className="space-y-3 ">
           <h2 className="font-medium">Deployment</h2>
-          <DemoCard isBleed img={micrositeDeploymentPic} width={648} height={480} />
+          <DemoCard img={micrositeDeploymentPic} width={648} height={480} />
         </section>
         <section className="space-y-3 ">
           <h2 className="font-medium">Database design</h2>

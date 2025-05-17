@@ -8,9 +8,18 @@ type Props = {
   width?: number;
   height?: number;
   isBleed?: boolean;
+  isHighlighted?: boolean;
 };
 
-const DemoCard = ({ video, className, img, width, height, isBleed = false }: Props) => {
+const DemoCard = ({
+  isHighlighted = false,
+  video,
+  className,
+  img,
+  width,
+  height,
+  isBleed = false,
+}: Props) => {
   return (
     <div
       className={cn(
@@ -19,9 +28,11 @@ const DemoCard = ({ video, className, img, width, height, isBleed = false }: Pro
         className
       )}
     >
-      <div className="absolute -top-[1px] flex w-full justify-center">
-        <div className="left-0 h-[1px] animate-border-width rounded-full bg-gradient-to-r from-primary-200 via-primary-500 to-primary-200 " />
-      </div>
+      {isHighlighted && (
+        <div className="absolute -top-[1px] flex w-full justify-center">
+          <div className="left-0 h-[1px] animate-border-width rounded-full bg-gradient-to-r from-primary-200 via-primary-500 to-primary-200 " />
+        </div>
+      )}
       <div className="space-y-4 ring-1 ring-gray-950/10 shadow-sm shadow-gray-200 rounded-lg bg-gradient-to-b from-gray-50 sm:p-4 p-1">
         {img && (
           <Image

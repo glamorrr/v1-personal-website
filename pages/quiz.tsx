@@ -31,7 +31,7 @@ export default function QuizProjectPage() {
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Demo</h2>
-          <DemoCard video="/videos/quiz-demo.mp4" />
+          <DemoCard isHighlighted video="/videos/quiz-demo.mp4" />
           <Link
             target="_blank"
             href="https://quiz.tonianugrah.my.id/"

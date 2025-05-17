@@ -28,7 +28,7 @@ export default function SlicingProjectPage() {
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Demo</h2>
-          <DemoCard img={slicingPic} />
+          <DemoCard isHighlighted img={slicingPic} />
           <Link
             target="_blank"
             href="https://sites.tonianugrah.my.id/"

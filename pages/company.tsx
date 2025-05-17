@@ -28,7 +28,7 @@ export default function CompanyProfileProjectPage() {
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Demo</h2>
-          <DemoCard img={companyPic} />
+          <DemoCard isHighlighted img={companyPic} />
           <Link
             target="_blank"
             href="https://cipta-mikro-material.com/"

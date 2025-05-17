@@ -29,7 +29,7 @@ export default function HrProjectPage() {
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Demo</h2>
-          <DemoCard img={hrPic} />
+          <DemoCard isHighlighted img={hrPic} />
           <Link
             target="_blank"
             href="https://lookerstudio.google.com/reporting/2da1c080-db74-4f75-b556-6546f9b0253a"
