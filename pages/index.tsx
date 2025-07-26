@@ -79,7 +79,7 @@ export default function Home() {
             <ProjectCard title="Fun quiz" href="/quiz" img={quizPic} />
           </div>
         </section>
-        <section className="space-y-3">
+        {/* <section className="space-y-3">
           <h2 className="font-medium">Certifications</h2>
           <div className="space-y-2">
             <p className="text-gray-500">
@@ -105,7 +105,7 @@ export default function Home() {
               </LinkWithIcon>
             </p>
           </div>
-        </section>
+        </section> */}
         <section className="space-y-3">
           <h2 className="font-medium">Social links</h2>
           <div className="space-y-2">
