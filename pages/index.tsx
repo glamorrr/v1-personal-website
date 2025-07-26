@@ -42,7 +42,7 @@ export default function Home() {
         </header>
         <section className="space-y-3">
           <h2 className="font-medium">About me</h2>
-          <p className="text-gray-500">I build web apps with a user-friendly experience.</p>
+          <p className="text-gray-500">I build web apps with user-friendly experience.</p>
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Tools</h2>
