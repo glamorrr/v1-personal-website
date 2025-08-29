@@ -30,7 +30,7 @@ export default function Home() {
             />
             <div>
               <h1 className="font-medium">Toni Anugrah</h1>
-              <p className="text-gray-500">Web Developer</p>
+              <p className="text-gray-500">Information Systems Graduate</p>
             </div>
           </section>
           <Link
@@ -40,10 +40,10 @@ export default function Home() {
             Contact
           </Link>
         </header>
-        <section className="space-y-3">
+        {/* <section className="space-y-3">
           <h2 className="font-medium">About me</h2>
           <p className="text-gray-500">I build web apps with user-friendly experience.</p>
-        </section>
+        </section> */}
         <section className="space-y-3">
           <h2 className="font-medium">Tools</h2>
           <p className="flex gap-3 flex-wrap">
