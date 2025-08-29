@@ -53,7 +53,7 @@ export default function Home() {
             <mark>Express</mark>
             <mark>Prisma</mark>
             <mark>SQL</mark>
-            <mark>Wordpress</mark>
+            <mark>WordPress</mark>
             <mark>Wix</mark>
             <mark>Looker Studio</mark>
             <mark>Postman</mark>
