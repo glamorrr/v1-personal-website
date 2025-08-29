@@ -47,10 +47,10 @@ export default function Home() {
         <section className="space-y-3">
           <h2 className="font-medium">Tools</h2>
           <p className="flex gap-3 flex-wrap">
-            <mark>React.js</mark>
+            <mark>React</mark>
             <mark>Tailwind CSS</mark>
             <mark>Figma</mark>
-            <mark>Express.js</mark>
+            <mark>Express</mark>
             <mark>Prisma</mark>
             <mark>SQL</mark>
             <mark>Wordpress</mark>
