@@ -1,7 +1,6 @@
 import { DefaultLayout } from "@/layouts";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { DemoCard } from "@/components/demo-card";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -70,7 +69,7 @@ export default function DocumentTrackingProjectPage() {
                           name: "Displays the search results",
                           status: "PASSED",
                           description:
-                            'Search results related to the keyword "Google" are successfully displayed.',
+                            "Search results related to the keyword "Google" are successfully displayed.',
                           screenshot: "C:\\image3.png",
                         },
                       ],
@@ -87,7 +86,7 @@ export default function DocumentTrackingProjectPage() {
           <h2 className="font-medium">How to use</h2>
           <pre className="p-4 border rounded-md max-h-64 overflow-x-auto bg-gray-50">
             <code className="text-gray-500">
-              node "path-to-report-generator.js" "path-to-input.json"
+              node &quot;path-to-report-generator.js&quot; &quot;path-to-input.json&quot;
             </code>
           </pre>
         </section>
