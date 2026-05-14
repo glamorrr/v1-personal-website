@@ -1,15 +1,15 @@
-import { buttonVariants } from '@/components/ui/button';
-import { DefaultLayout } from '@/layouts';
-import Link from 'next/link';
-import { Icon } from '@iconify/react';
-import slicingPic from '@/public/images/slicing-screenshot.png';
-import { DemoCard } from '@/components/demo-card';
-import { LinkWithIcon } from '@/components/link-with-icon';
-import { cn } from '@/lib/utils';
+import { buttonVariants } from "@/components/ui/button";
+import { DefaultLayout } from "@/layouts";
+import Link from "next/link";
+import { Icon } from "@iconify/react";
+import slicingPic from "@/public/images/slicing-screenshot.png";
+import { DemoCard } from "@/components/demo-card";
+import { LinkWithIcon } from "@/components/link-with-icon";
+import { cn } from "@/lib/utils";
 
 export default function SlicingProjectPage() {
   return (
-    <DefaultLayout meta={{ title: 'Slicing' }}>
+    <DefaultLayout meta={{ title: "Slicing" }}>
       <main className="space-y-16">
         <header>
           <Link
@@ -31,8 +31,8 @@ export default function SlicingProjectPage() {
           <DemoCard isHighlighted img={slicingPic} />
           <Link
             target="_blank"
-            href="https://sites.tonianugrah.my.id/"
-            className={cn(buttonVariants(), 'gtm-live-demo-link')}
+            href="https://sites.tonianugrah.com"
+            className={cn(buttonVariants(), "gtm-live-demo-link")}
           >
             See website
           </Link>

@@ -1,14 +1,14 @@
-import { buttonVariants } from '@/components/ui/button';
-import { DefaultLayout } from '@/layouts';
-import { LinkWithIcon } from '@/components/link-with-icon';
-import Link from 'next/link';
-import { Icon } from '@iconify/react';
-import { DemoCard } from '@/components/demo-card';
-import { cn } from '@/lib/utils';
+import { buttonVariants } from "@/components/ui/button";
+import { DefaultLayout } from "@/layouts";
+import { LinkWithIcon } from "@/components/link-with-icon";
+import Link from "next/link";
+import { Icon } from "@iconify/react";
+import { DemoCard } from "@/components/demo-card";
+import { cn } from "@/lib/utils";
 
 export default function CafeBrowserProjectPage() {
   return (
-    <DefaultLayout meta={{ title: 'Cafe browser' }}>
+    <DefaultLayout meta={{ title: "Cafe browser" }}>
       <main className="space-y-16">
         <header>
           <Link
@@ -22,9 +22,10 @@ export default function CafeBrowserProjectPage() {
         <section className="space-y-3">
           <h2 className="font-medium">Cafe Browser</h2>
           <p className="text-gray-500">
-            The placement of 15 cafes point within the Setiabudi area in South Jakarta. This website
-            uses <mark>Leaflet.js</mark> to display cafes point on the map. <mark>Next.js</mark> and{' '}
-            <mark>Material UI</mark> is utilized to handle client interactivity.
+            The placement of 15 cafes point within the Setiabudi area in South
+            Jakarta. This website uses <mark>Leaflet.js</mark> to display cafes
+            point on the map. <mark>Next.js</mark> and <mark>Material UI</mark>{" "}
+            is utilized to handle client interactivity.
           </p>
         </section>
         <section className="space-y-3">
@@ -32,8 +33,8 @@ export default function CafeBrowserProjectPage() {
           <DemoCard isHighlighted video="/videos/cafe-demo.mp4" />
           <Link
             target="_blank"
-            href="https://cafe.tonianugrah.my.id"
-            className={cn(buttonVariants(), 'gtm-live-demo-link')}
+            href="https://cafe.tonianugrah.com"
+            className={cn(buttonVariants(), "gtm-live-demo-link")}
           >
             See website
           </Link>

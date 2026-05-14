@@ -1,14 +1,14 @@
-import { buttonVariants } from '@/components/ui/button';
-import { DefaultLayout } from '@/layouts';
-import { LinkWithIcon } from '@/components/link-with-icon';
-import Link from 'next/link';
-import { Icon } from '@iconify/react';
-import { DemoCard } from '@/components/demo-card';
-import { cn } from '@/lib/utils';
+import { buttonVariants } from "@/components/ui/button";
+import { DefaultLayout } from "@/layouts";
+import { LinkWithIcon } from "@/components/link-with-icon";
+import Link from "next/link";
+import { Icon } from "@iconify/react";
+import { DemoCard } from "@/components/demo-card";
+import { cn } from "@/lib/utils";
 
 export default function MovieBrowserProjectPage() {
   return (
-    <DefaultLayout meta={{ title: 'Movie browser' }}>
+    <DefaultLayout meta={{ title: "Movie browser" }}>
       <main className="space-y-16">
         <header>
           <Link
@@ -22,9 +22,10 @@ export default function MovieBrowserProjectPage() {
         <section className="space-y-3">
           <h2 className="font-medium">Movie browser</h2>
           <p className="text-gray-500">
-            A web application for viewing and searching information related to movies. Movies data
-            is sourced from the <mark>TMDb API</mark>. The application is developed using{' '}
-            <mark>Next.js</mark>, with <mark>Tailwind CSS</mark> for styling.
+            A web application for viewing and searching information related to
+            movies. Movies data is sourced from the <mark>TMDb API</mark>. The
+            application is developed using <mark>Next.js</mark>, with{" "}
+            <mark>Tailwind CSS</mark> for styling.
           </p>
         </section>
         <section className="space-y-3">
@@ -32,8 +33,8 @@ export default function MovieBrowserProjectPage() {
           <DemoCard isHighlighted video="/videos/movie-demo.mp4" />
           <Link
             target="_blank"
-            href="https://movie.tonianugrah.my.id/"
-            className={cn(buttonVariants(), 'gtm-live-demo-link')}
+            href="https://movie.tonianugrah.com"
+            className={cn(buttonVariants(), "gtm-live-demo-link")}
           >
             See website
           </Link>

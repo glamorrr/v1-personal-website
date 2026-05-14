@@ -1,28 +1,29 @@
-import { buttonVariants } from '@/components/ui/button';
-import { DefaultLayout } from '@/layouts';
-import Image from 'next/image';
-import profilePic from '@/public/images/pp.jpeg';
-import moviePic from '@/public/images/movie-screenshot.png';
-import micrositePic from '@/public/images/microsite-screenshot.png';
-import documentPic from '@/public/images/document-screenshot.png';
-import cafePic from '@/public/images/cafe-screenshot.png';
-import hrPic from '@/public/images/hr-screenshot.png';
-import companyPic from '@/public/images/company-screenshot.png';
-import quizPic from '@/public/images/quiz-screenshot.png';
-import slicingPic from '@/public/images/slicing-screenshot.png';
-import { ProjectCard } from '@/components/project-card';
-import { LinkWithIcon } from '@/components/link-with-icon';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
+import { buttonVariants } from "@/components/ui/button";
+import { DefaultLayout } from "@/layouts";
+import Image from "next/image";
+import profilePic from "@/public/images/pp.jpg";
+import jsonToPDFPic from "@/public/images/json-screenshot.png";
+import moviePic from "@/public/images/movie-screenshot.png";
+import micrositePic from "@/public/images/microsite-screenshot.png";
+import documentPic from "@/public/images/document-screenshot.png";
+import cafePic from "@/public/images/cafe-screenshot.png";
+import hrPic from "@/public/images/hr-screenshot.png";
+import companyPic from "@/public/images/company-screenshot.png";
+import quizPic from "@/public/images/quiz-screenshot.png";
+import slicingPic from "@/public/images/slicing-screenshot.png";
+import { ProjectCard } from "@/components/project-card";
+import { LinkWithIcon } from "@/components/link-with-icon";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <DefaultLayout meta={{ title: 'Toni Anugrah' }}>
+    <DefaultLayout meta={{ title: "Toni Anugrah" }}>
       <main className="space-y-16">
         <header className="flex sm:space-x-6 sm:items-center justify-between sm:flex-row flex-col sm:space-y-0 space-y-6 items-stretch">
           <section className="flex space-x-4 items-center">
             <Image
-              className="w-16 h-16 rounded-full"
+              className="w-16 h-16 rounded-full border"
               src={profilePic}
               alt="profile picture"
               width={100}
@@ -30,12 +31,11 @@ export default function Home() {
             />
             <div>
               <h1 className="font-medium">Toni Anugrah</h1>
-              <p className="text-gray-500">Information Systems Graduate</p>
             </div>
           </section>
           <Link
             href="mailto:toniianugrah@gmail.com"
-            className={cn('gtm-contact', buttonVariants())}
+            className={cn("gtm-contact", buttonVariants())}
           >
             Contact
           </Link>
@@ -50,6 +50,7 @@ export default function Home() {
             <mark>React</mark>
             <mark>Tailwind CSS</mark>
             <mark>Figma</mark>
+            <mark>Node.js</mark>
             <mark>Express</mark>
             <mark>Prisma</mark>
             <mark>SQL</mark>
@@ -57,22 +58,37 @@ export default function Home() {
             <mark>Wix</mark>
             <mark>Looker Studio</mark>
             <mark>Postman</mark>
+            <mark>Katalon Studio</mark>
+            <mark>UiPath</mark>
           </p>
         </section>
         <section className="space-y-3">
           <h2 className="font-medium">Explorations</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <ProjectCard
-              title="Movie browser"
-              href="/movie"
-              img={moviePic}
+              title="JSON to PDF"
+              href="/json"
+              img={jsonToPDFPic}
               isHighlighted
               isLarge
               className="col-span-1 sm:col-span-2"
             />
-            <ProjectCard title="Microsite builder" href="/microsite" img={micrositePic} />
-            <ProjectCard title="Document tracking" href="/document" img={documentPic} />
-            <ProjectCard title="Company profile" href="/company" img={companyPic} />
+            <ProjectCard title="Movie browser" href="/movie" img={moviePic} />
+            <ProjectCard
+              title="Microsite builder"
+              href="/microsite"
+              img={micrositePic}
+            />
+            <ProjectCard
+              title="Document tracking"
+              href="/document"
+              img={documentPic}
+            />
+            <ProjectCard
+              title="Company profile"
+              href="/company"
+              img={companyPic}
+            />
             <ProjectCard title="Cafe browser" href="/cafe" img={cafePic} />
             <ProjectCard title="HR hiring dashboard" href="/hr" img={hrPic} />
             <ProjectCard title="Slicing" href="/slicing" img={slicingPic} />
@@ -110,7 +126,7 @@ export default function Home() {
           <h2 className="font-medium">Social links</h2>
           <div className="space-y-2">
             <p className="text-gray-500">
-              Email —{' '}
+              Email —{" "}
               <LinkWithIcon
                 href="mailto:toniianugrah@gmail.com"
                 className="gtm-social-link"
@@ -120,7 +136,7 @@ export default function Home() {
               </LinkWithIcon>
             </p>
             <p className="text-gray-500">
-              LinkedIn —{' '}
+              LinkedIn —{" "}
               <LinkWithIcon
                 href="https://www.linkedin.com/in/tonianugrah"
                 isExternal
@@ -131,7 +147,7 @@ export default function Home() {
               </LinkWithIcon>
             </p>
             <p className="text-gray-500">
-              GitHub —{' '}
+              GitHub —{" "}
               <LinkWithIcon
                 href="https://github.com/glamorrr"
                 isExternal
